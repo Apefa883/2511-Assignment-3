@@ -1,0 +1,2 @@
+Link to netlify-hosted live site:
+https://main--lucent-salmiakki-ca6ea9.netlify.app/index.html
