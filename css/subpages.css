@@ -12,7 +12,7 @@
     height: 20rem;
 }
 
-#blurbgraphic2 {
+.blurbgraphic2 {
     flex-grow: 0;
     text-align: center;
     border-bottom: 2px solid var(--blurbbordercolor);
@@ -28,6 +28,12 @@
 
 figcaption {
     font-style: italic;
+}
+
+#video {
+    width: 70%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 589px) {
