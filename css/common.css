@@ -1,0 +1,186 @@
+:root {
+    --ribboncolor: #0041A8;
+    --bodycolor: whitesmoke;
+    --highlightedcolor: rgb(252, 218, 155);
+    --headertextcolor: white;
+    --headerheadingcolor:rgb(254, 210, 128);
+    --bodytextcolor: black;
+    --basecolor: white;
+    --blurbcolor: white;
+    --blurbbordercolor: rgb(221, 221, 221);
+}
+/* Sadly, changing these requires some javascript, which is beyond the scope of the effort which I am willing to expend. */
+
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ribbon {
+    background-color: var(--ribboncolor);
+    color: var(--headertextcolor);
+    height: 4rem;
+}
+
+#banner {
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+}
+#banner img {
+    width: 100%;
+    margin: 0;
+}
+
+#blurb {
+    background-color: var(--blurbcolor);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#blurbgraphic {
+    flex-grow: 1;
+    text-align: center;
+    border-bottom: 2px solid var(--blurbbordercolor);
+}
+
+#blurbgraphic img {
+    width: 70%;
+    border-radius: 1rem;
+}
+
+#blurbtext {
+    flex-grow: 4;
+}
+
+main {
+    height: 100%;
+}
+
+#contentbackground {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.ribbon {
+    display: flex;
+    text-align: center;
+}
+
+.ribbon div {
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+}
+
+nav #navbox {
+    justify-content: right;
+    display: flex;
+    align-items: center;
+}
+
+nav #navbox a{
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: large;
+    color: var(--headertextcolor);
+}
+
+nav #navbox a:hover {
+    background-color: var(--highlightedcolor);
+    color: var(--bodytextcolor);
+}
+
+
+nav #navbox a{
+    height: 4rem;
+}
+
+nav #navbox #selected {
+    background-color: var(--highlightedcolor);
+    color: var(--bodytextcolor);
+}
+
+#footer {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 379px) {
+    #logobox * {
+        display:none;
+    }
+
+    #logobox {
+        display: none !important;
+        /*Stackoverflow. Vinay Pratap Singh Bhadauria, replying to CSS - display: none; not working question by RoyalSwish*/
+        /*Accessed March 28, 2023. https://stackoverflow.com/questions/20663712/css-display-none-not-working*/
+    }
+
+    .ribbon {
+        justify-content: center;
+    }
+
+    nav #navbox{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    nav #navbox a{
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 4rem;
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 589px) {
+    #logobox * {
+        display:none;
+    }
+
+    #logobox {
+        display: none !important;
+        /*Stackoverflow. Vinay Pratap Singh Bhadauria, replying to CSS - display: none; not working question by RoyalSwish*/
+        /*Accessed March 28, 2023. https://stackoverflow.com/questions/20663712/css-display-none-not-working*/
+    }
+
+    .ribbon {
+        justify-content: center;
+    }
+
+    nav #navbox {
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    nav #navbox a{
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 4rem;
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 590px) {
+    nav #navbox {
+        justify-content: right;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav #navbox a{
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: larger;
+    }
+}
