@@ -12,6 +12,12 @@
     height: 20rem;
 }
 
+#blurbgraphic2 {
+    flex-grow: 0;
+    text-align: center;
+    border-bottom: 2px solid var(--blurbbordercolor);
+}
+
 .professional {
     background-image: url("../images/TechBackground.jpg");
 }

@@ -19,7 +19,8 @@
                 </div>
                 <nav>
                     <div id="navbox">
-                        <a id="selected" href="index.html">Home</a>
+                        <!--By double-clicking the selected section, it jumps to main!-->
+                        <a id="selected" href="#maincontent">Home</a>
                         <a href="pages/personal.html">About Me</a>
                         <a href="pages/professional.html">Qualifications</a>
                     </div>
@@ -29,25 +30,25 @@
                 <!-- The original 6 images were too small to look good in a carousel. Other images from the website were chosen instead.-->
                 <div id="banner" class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/Bench.jpg" alt="Close-up of a bench in nature">
+                        <img src="images/Bench.jpg" alt="Close-up of a bench in nature" title="Bench Macro">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/Deer.jpg" alt="A deer peering out from a snowy forest">
+                        <img src="images/Deer.jpg" alt="A deer peering out from a snowy forest" title="Deer Picture">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/OrangeFlowers.jpg" alt="Macro shot of brilliantly-orange flowers">
+                        <img src="images/OrangeFlowers.jpg" alt="Macro shot of brilliantly-orange flowers" title="Orange Flowers">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/PinkFlowers.jpg" alt="A macro shot of tiny pink flowers">
+                        <img src="images/PinkFlowers.jpg" alt="A macro shot of tiny pink flowers" title="Pink Flowers">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/WinterScene.jpg" alt="An old mailbox in a wintry forest">
+                        <img src="images/WinterScene.jpg" alt="An old mailbox in a wintry forest" title="Winter Forest">
                     </div>
                 </div>
             </div>
         </header>
 
-        <main>
+        <main id="maincontent">
             <div class="container bg-light" id="contentbackground">
                 <div class="row w-1000" id="introbox">
                     <h1>Who I Am</h1>
@@ -84,7 +85,7 @@
                         <article class="col-12 p-1 rounded border border-2" id="blurb">
                             <div id="blurbgraphic">
                                 <figure>
-                                    <img src="images/Cat.jpg" alt="A large white cat">
+                                    <img src="images/Cat.jpg" alt="A large white cat" title="My cat, Snow">
                                     <figcaption>My Cat (Picture taken by me, so no citation necessary!)</figcaption>
                                 </figure>
                             </div>
@@ -123,7 +124,7 @@
         
         <footer>
             <div id="footer" class="container-fluid ribbon">
-                <cite>This website was constructed with Bootstrap 5.0.2.</cite>
+                <cite>This website was constructed with Bootstrap 5.0.2. </cite><a href="#logobox">[Go to top]</a>
             </div>
         </footer>
 

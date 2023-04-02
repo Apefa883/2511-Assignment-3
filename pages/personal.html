@@ -20,7 +20,8 @@
                 <nav>
                     <div id="navbox">
                         <a href="../index.html">Home</a>
-                        <a id="selected" href="../pages/personal.html">About Me</a>
+                        <!--By double-clicking the selected section, it jumps to main!-->
+                        <a id="selected" href="#maincontent">About Me</a>
                         <a href="../pages/professional.html">Qualifications</a>
                     </div>
                 </nav>
@@ -37,7 +38,7 @@
             </div>
         </header>
 
-        <main>
+        <main id="maincontent">
             <div class="container bg-light" id="contentbackground">
                 <div class="row w-1000" id="introbox">
                     <p>
@@ -51,7 +52,22 @@
                             <h4>Me as a person</h4>
                             <p>
                                 That list to the right (or below if you're on mobile) will offer a basic idea of my hobbies. 
-                                
+                                During the summer, I often go SCUBA Diving. At the moment, I am working on my drysuit qualifications
+                                to go diving in colder waters and eventually even in winter! Although I doubt I'll make a career
+                                out of SCUBA or saturation diving, it's still a great way to spend summer days and gain practical
+                                skill making precise plans and taking care of life-saving gear.
+                            </p>
+                            <p>
+                                When I'm not diving, I'll often spend time cycling across the city or jogging for exercise. When jogging,
+                                I'll drag my dog along when he's up for it. 
+                                Although I haven't done much nature photography recently, I'm still looking forward to the summer to get
+                                back into it. 
+                            </p>
+                            <p>
+                                Modpack Dev is another good winter hobby, as it typically doesn't involve much exposure to the elements.
+                                What it does involve, however, is coding and organizational skills. Making planets and machines work
+                                correctly in games involves a substantial amount of coding knowledge and the ability to organize
+                                a staggering amount of resource folders correctly. 
                             </p>
                         </article>
                     </div>
@@ -59,7 +75,7 @@
                         <article class="col-12 p-1 rounded border border-2" id="blurb">
                             <div id="blurbgraphic">
                                 <figure>
-                                    <img src="../images/SCUBA.jpg" alt="SCUBA diver near a reef">
+                                    <img src="../images/SCUBA.jpg" alt="SCUBA diver near a reef" title="SCUBA diver">
                                     <!--Image taken from https://calgaryscuba.com/about-us/-->
                                     <figcaption>Creative Commons Image of a SCUBA diver from Calgary Dive School, 2019</figcaption>
                                 </figure>
@@ -72,16 +88,11 @@
                                 <ul>
                                     <li>SCUBA Diving</li>
                                     <li>Cycling</li>
-                                    <li>Photography (Nature, animals and birds)</li>
+                                    <li>Photography (nature, animals and birds)</li>
                                     <li>Jogging</li>
                                     <li>Modpack Dev</li>
                                 </ul>
                             </div>
-                        </article>
-                    </div>
-                    <div class="col-12 col-sm-6 p-1">
-                        <article class="col-12 p-1 rounded border border-2" id="blurb">
-                            <p>Fart</p>
                         </article>
                     </div>
                     <div class="col-12 col-sm-6 p-1">
@@ -94,7 +105,7 @@
         
         <footer>
             <div id="footer" class="container-fluid ribbon">
-                <cite>This website was constructed with Bootstrap 5.0.2.</cite>
+                <cite>This website was constructed with Bootstrap 5.0.2. </cite><a href="#logobox">[Go to top]</a>
             </div>
         </footer>
 

@@ -112,6 +112,10 @@ nav #navbox #selected {
     justify-content: center;
 }
 
+footer a {
+    color: var(--headerheadingcolor);
+}
+
 @media screen and (max-width: 379px) {
     #logobox * {
         display:none;
